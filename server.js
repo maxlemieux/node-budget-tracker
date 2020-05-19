@@ -3,16 +3,13 @@ const logger = require('morgan');
 const mongoose = require('mongoose');
 const compression = require('compression');
 
-const PORT = 3000;
-
+const port = process.env.PORT || 3000;
 const app = express();
 
 app.use(logger('dev'));
-
 app.use(compression());
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
-
 app.use(express.static('public'));
 
 // routes
@@ -25,7 +22,7 @@ const MongoOpts = {
 };
 mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost/budgetdb', MongoOpts)
   .then(() => {
-    app.listen(PORT, () => {
+    app.listen(port, () => {
       // console.log(`App running on port ${PORT}!`);
     });
   });
