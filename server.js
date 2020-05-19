@@ -15,6 +15,9 @@ app.use(express.json());
 
 app.use(express.static('public'));
 
+// routes
+app.use(require('./routes/api.js'));
+
 const MongoOpts = {
   useNewUrlParser: true,
   useFindAndModify: false,
@@ -26,7 +29,3 @@ mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost/budgetdb', Mong
       // console.log(`App running on port ${PORT}!`);
     });
   });
-
-
-// routes
-app.use(require('./routes/api.js'));
