@@ -10,7 +10,7 @@
 * [Technologies](#technologies)
 
 ## About
-School project: Budget tracker with offline functionality, built in Node.js/Express.js/MongoDB
+School project: Budget tracker with offline functionality, built as a Progressive Web App in Node.js/Express.js/MongoDB.
 
 ## Installation
 
@@ -50,4 +50,4 @@ A demo of the app can be found here:
 * Express.js
 * MongoDB
 * Heroku + mLab
-* IndexedDB + Service Worker Enabled
+* Progressive Web App: IndexedDB + Service Worker Enabled
