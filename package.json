@@ -24,10 +24,11 @@
     "compression": "^1.7.4",
     "express": "^4.17.1",
     "http-proxy": "^1.18.1",
-    "lite-server": "^2.5.3",
+    "lite-server": "^2.6.1",
     "minimist": "^1.2.3",
     "mongoose": "^5.5.15",
-    "morgan": "^1.9.1"
+    "morgan": "^1.9.1",
+    "ua-parser-js": "^0.7.28"
   },
   "resolutions": {
     "minimist": "1.2.3",
