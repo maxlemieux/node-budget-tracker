@@ -22,7 +22,7 @@
   "homepage": "https://github.com/maxlemieux/node-budget-tracker/#readme",
   "dependencies": {
     "compression": "^1.7.4",
-    "express": "^4.17.1",
+    "express": "^4.17.3",
     "http-proxy": "^1.18.1",
     "lite-server": "^2.6.1",
     "minimist": "^1.2.6",
